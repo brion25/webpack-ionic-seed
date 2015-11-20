@@ -1,0 +1,23 @@
+{
+  "name": "webpack-ionic-seed",
+  "version": "1.0.0",
+  "description": "Basic seed to use ionic and webpack together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brion25/webpack-ionic-seed.git"
+  },
+  "keywords": [
+    "webpack",
+    "ionic"
+  ],
+  "author": "JC Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brion25/webpack-ionic-seed/issues"
+  },
+  "homepage": "https://github.com/brion25/webpack-ionic-seed#readme"
+}
