@@ -20,8 +20,8 @@ module.exports = {
         loader : ExtractTextPlugin.extract('style-loader','css-loader!sass-loader')
       },
       {
-        test:/\.html$/,
-        loader:"file?name=views/[name].html"
+        test:/\.jade$/,
+        loader:"jade"
       }
     ]
   },

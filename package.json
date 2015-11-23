@@ -20,6 +20,8 @@
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.4",
     "gulp-util": "^2.2.14",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
     "mocha": "^2.3.4",
     "node-sass": "^3.4.2",
     "sass-loader": "^3.1.1",
@@ -52,6 +54,7 @@
   },
   "scripts": {
     "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run build\" \"ionic serve\"",
-    "build": "node ./node_modules/webpack/bin/webpack.js  --config webpack.config.js --progress --colors --watch"
+    "build": "node ./node_modules/webpack/bin/webpack.js  --config webpack.config.js --progress --colors --watch",
+    "test": "node ./node_modules/mocha/bin/mocha ./mocha.config.js"
   }
 }

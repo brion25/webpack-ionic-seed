@@ -1,5 +1,5 @@
-import HomeCtrl from './home/controller-home';
-import DetailsCtrl from './details/controller-details';
+import Home from './home/index.js';
+import Details from './details/index.js';
 
 export default angular.module('myApp', ['ionic','ui.router'])
   .config(['$stateProvider','$urlRouterProvider',($stateProvider,$urlRouterProvider)=>{
@@ -7,14 +7,14 @@ export default angular.module('myApp', ['ionic','ui.router'])
     $stateProvider
       .state('index',{
         url:'/',
-        templateUrl:'dist/views/home.html',
-        controller:HomeCtrl,
+        template:Home.view(),
+        controller:['$state',Home.ctrl],
         controllerAs:'home'
       })
       .state('details',{
         url:'/details',
-        templateUrl:'dist/views/details.html',
-        controller:DetailsCtrl,
+        template:Details.view(),
+        controller:Details.ctrl,
         controllerAs:'detail'
       })
   }]);

@@ -1,5 +1,3 @@
-import __view from './details.html';
-
 export default function(){
   let self = this;
 
